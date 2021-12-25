@@ -306,3 +306,94 @@ function makeList(arr) {
 
 const resultDisplayArray = makeList(result.failure);
 // console.log(resultDisplayArray)
+
+// simple fields
+
+var createPerson = (name, age, gender) => { // using var to create another function witht the same name
+    return {
+        name: name,
+        age: age,
+        gender: gender
+    };
+};
+
+// The below code simplifies as there is some repitition, we can omit those repitition
+
+var createPerson1 = (name, age, gender) => ( { name, age, gender } );
+// console.log(createPerson1("Harry Potter", 15, "male"));
+
+// write concise declarative functions
+
+const bicycle = {
+    gear: 2,
+    setGear(newGear) { // this is better instead of setGear: function (newGear)
+        "use strict";
+        this.gear = newGear;
+    }
+};
+
+bicycle.setGear(3);
+// console.log(bicycle.gear);
+
+// use class syntax to define a constructor function
+
+// var SpaceShuttle = function (targetPlanet) { //constructor block
+    // this.targetPlanet = targetPlanet; // constructor block
+// };
+
+// var zeus = new SpaceShuttle('Jupiter');
+
+// the above constructor can be replaced with class syntax
+
+class SpaceShuttle {
+    constructor(targetPlanet){
+        this.targetPlanet = targetPlanet;
+    }
+}
+
+var zeus = new SpaceShuttle('Jupiter');
+// console.log(zeus.targetPlanet);
+
+// getters and setters
+
+class Book {
+    constructor(author) {
+        this._author = author;
+    }
+    // getter
+    get writer() {
+        return this._author;
+    }
+    // setter
+    set writer(updatedAuthor) {
+        this._author = updatedAuthor;
+    }
+}
+
+function makeClass() {
+    class Thermostat {
+        constructor (temp) {
+            this._temp = 5/9 * (temp - 32);
+        };
+        get temperature() {
+            return this._temp;
+        };
+        set temperature(updatedTemp) {
+            this._temp = updatedTemp;
+        }
+    }
+    return Thermostat;
+}
+
+const Thermostat = makeClass();
+const thermos = new Thermostat(76);
+let temp = thermos.temperature;
+thermos.temperature = 26;
+temp = thermos.temperature;
+
+// `this` means that this.var the variable is accessible in the class only
+// variables starting with _var is a private variable
+
+
+
+
