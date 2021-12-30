@@ -1,7 +1,17 @@
-const names = require("./2-names");
-const sayHi = require('./2-utils');
-const data = require('./2-alternative-syntax');
-require('./3-mind-grenade')
-// sayHi('susan');
-// sayHi((names.john));
-// sayHi(names.peter);
+const os = require('os');
+
+// for user info
+const user = os.userInfo();
+console.log((user));
+
+// system uptime
+console.log(`The system uptime is ${os.uptime()}`);
+
+const currentOs = {
+    name: os.type(),
+    release: os.release(),
+    totalMem: os.totalmem(),
+    freeMem : os.freemem()
+}
+
+console.log(currentOs);
