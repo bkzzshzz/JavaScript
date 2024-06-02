@@ -108,3 +108,48 @@ console.log(`hello from ${country}`);
 console.log(`hello ${"country"}`);
 
 // type conversion
+
+let string1 = "12345";
+let num1 = Number(string1);
+console.log(typeof num1);
+
+let truth = true;
+let verdict = String(truth);
+console.log(typeof verdict);
+
+// concatenation with +
+
+console.log(2 + 2 + "1");
+console.log("2" + 2 + 1);
+
+let apples = "4";
+let oranges = "6";
+console.log(+apples + +oranges);
+
+// operators
+
+let n = 4;
+n = n + 5;
+n = n - 1;
+console.log(n);
+n += 5;
+n -= 2;
+n *= 2;
+console.log(n);
+n++;
+console.log(n);
+
+let counter = 1;
+let randomValue = ++counter; // increases counter first and then passes the value
+console.log(randomValue);
+
+counter = 1;
+randomValue = counter++; // passes old value and increment later
+console.log(randomValue); // old value of counter
+console.log(counter); // increment of counter
+
+// equality
+
+let a = 5;
+let b = 5;
+console.log(a === 5);
