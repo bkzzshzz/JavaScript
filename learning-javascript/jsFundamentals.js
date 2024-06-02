@@ -30,3 +30,81 @@ let messageA = "The number you have dialled is ",
 console.log(messageA + reasonC);
 console.log(messageA + reasonB);
 console.log(messageA + reasonA);
+
+// cannot declare the same variable multiple times with using "let"
+// but can without "let"
+
+message = "nice";
+
+console.log("\n" + message);
+
+// using const
+
+const pi = 3.14;
+
+let radius = 5;
+let area = pi * radius * radius;
+console.log(area);
+
+// tasks for variables section
+
+// 1. Declare two variables: admin and name
+
+let admin;
+let name;
+
+// 2. Assign the value "John" to name
+
+name = "John";
+
+// 3. Copy the value from name to admin
+
+admin = name;
+
+// 4. Show the value of admin using console.log()
+
+console.log(admin);
+
+// Data types
+
+// number
+
+let num = 123;
+console.log(num);
+
+num = 456;
+console.log(num);
+
+const _ = 129082893789346873648734n; //bigInt "n" at the end
+
+console.log(_);
+
+// String
+
+let str = "Hello";
+let str2 = "hoW are you?";
+let greeting = `${str}, ${str2.toLowerCase()}`; // backticks are important here
+console.log(greeting);
+
+// Boolean
+
+let isGoodStudent = true;
+let isAthelicStudent = false;
+
+if (isGoodStudent) {
+  console.log("Rahul is a Good Student");
+}
+
+// typeof to know the type of data
+
+console.log(typeof str);
+console.log(typeof isAthelicStudent);
+
+// tasks
+
+let country = "Rwanda";
+console.log(`hello from ${1}`);
+console.log(`hello from ${country}`);
+console.log(`hello ${"country"}`);
+
+// type conversion
