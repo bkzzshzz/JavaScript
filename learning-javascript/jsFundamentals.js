@@ -153,3 +153,49 @@ console.log(counter); // increment of counter
 let a = 5;
 let b = 5;
 console.log(a === 5);
+
+// if statement
+
+let river = "Bagmati";
+let isDirty = true;
+
+if (isDirty === false) {
+  console.log(`${river} is dirty`);
+  console.log(`hello`);
+} else {
+  console.log(`${river} is clean`);
+}
+
+let number = 24;
+
+if (number % 2 == 0) {
+  console.log(`${number} is divisible by 2`);
+} else if (number % 3 == 0) {
+  console.log(`${number} is divisible by 3`);
+} else {
+  console.log(`${number} is not divisble by 2 or 3`);
+}
+
+let age = 20;
+
+// use ? for condition
+let canVote = age > 18 ? true : false;
+if (canVote) {
+  console.log(`The person can vote.`);
+} else {
+  console.log(`The person cannot vote.`);
+}
+
+let laptopCharge = 90;
+
+let chargeAlert =
+  laptopCharge >= 90
+    ? `Sufficient`
+    : laptopCharge < 80
+    ? `Get charger ready`
+    : laptopCharge < 50
+    ? `Plugin in the charger`
+    : laptopCharge < 20
+    ? `Charge right away`
+    : ``;
+console.log(`Laptop battery status is ${chargeAlert}`);
