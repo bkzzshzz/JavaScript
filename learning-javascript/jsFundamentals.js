@@ -199,3 +199,37 @@ let chargeAlert =
     ? `Charge right away`
     : ``;
 console.log(`Laptop battery status is ${chargeAlert}`);
+
+// task
+
+let result = a + b < 4 ? `Below` : `Over`;
+
+console.log(`The value of a is ${a} and b is ${b} and a + b is ${result} 4`);
+
+// Logical operator
+a = true;
+b = false;
+result = a && b; // and
+console.log(result);
+
+result = a || b; // or
+console.log(result);
+
+console.log(!a);
+
+// double question mark nullish operator
+
+let user;
+
+console.log(user ?? "Anonymous");
+
+user = "Tilak";
+
+console.log(user ?? "Anonymous");
+
+let height = null;
+let width = null;
+
+area = (height ?? 100) * (width ?? 50);
+
+console.log(area);
