@@ -233,3 +233,48 @@ let width = null;
 area = (height ?? 100) * (width ?? 50);
 
 console.log(area);
+
+// while...loop
+let i = 1;
+while (i <= 10) {
+  console.log(i++);
+}
+
+i = 10;
+while (i) {
+  console.log(`${i} is not 0 yet`);
+  i--;
+}
+
+console.log(`${i} is 0`);
+
+// do while
+i += 1;
+do {
+  console.log(i);
+  i++;
+} while (i <= 10);
+
+// for loop
+
+for (i = 0; i < 10; i++) {
+  console.log(i);
+}
+
+// inline variable example
+
+for (let j = 7; j < 10; j++) {
+  console.log(j);
+}
+
+// console.log(j); // shows an error, cuz j is declared locally within for
+let j = 2;
+for (; j < 5; j++) console.log(j); // omit j as j is already declared // shorthand
+
+// for (;;); // infinite loop
+
+// break a loop with break
+for (; j < 20; j++) {
+  if (j == 15) break;
+}
+console.log(`We reached ${j}`);
