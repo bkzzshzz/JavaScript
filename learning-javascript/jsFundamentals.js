@@ -278,3 +278,21 @@ for (; j < 20; j++) {
   if (j == 15) break;
 }
 console.log(`We reached ${j}`);
+
+// continue
+
+for (let i = 0; i <= 10; i++) {
+  if (i % 2 == 0) continue;
+
+  console.log(i);
+}
+
+// tomorrow labelname
+
+outside: for (let k = 0; k < 10; k++) {
+  for (let l = 0; l < 10; l++) {
+    if (k == 4) break outside;
+
+    console.log(k, l);
+  }
+}
