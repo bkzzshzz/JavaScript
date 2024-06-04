@@ -287,7 +287,7 @@ for (let i = 0; i <= 10; i++) {
   console.log(i);
 }
 
-// tomorrow labelname
+// labelname
 
 outside: for (let k = 0; k < 10; k++) {
   for (let l = 0; l < 10; l++) {
@@ -296,3 +296,29 @@ outside: for (let k = 0; k < 10; k++) {
     console.log(k, l);
   }
 }
+
+// swtich case
+
+let randomNum = 4;
+let remainder = 0;
+
+switch (randomNum) {
+  case 1:
+  case 2:
+  case 3:
+    console.log(`${randomNum} is prime`);
+    break;
+  default:
+    for (let i = 3; i <= randomNum - 1; i++) {
+      remainder = randomNum % i;
+      if (remainder == 0) {
+        console.log(`${randomNum} is not prime`);
+        break;
+      }
+    }
+}
+if (remainder != 0) {
+  console.log(`${randomNum} is prime`);
+}
+
+// the above code is not perfect for now
