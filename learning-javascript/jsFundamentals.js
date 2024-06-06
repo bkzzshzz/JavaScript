@@ -391,4 +391,18 @@ function showCancel() {
   console.log("You cancelled the excecution");
 }
 
-ask(false, showOk, showCancel);
+// ask(false, showOk, showCancel);
+
+// Function Expression vs Function Declaration
+
+// Function Declaration
+
+function addNum(a, b) {
+  return a + b;
+}
+
+let addTwoNum = addNum(4, 6);
+console.log(addTwoNum);
+
+// console.log(`${addNum(4, 5)} and ${addTwoNum(4, 6)}`);
+// console.log(typeof addTwoNum, typeof addNum);
