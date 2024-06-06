@@ -365,6 +365,30 @@ function showPrimes(n) {
   }
 }
 
-showPrimes(105);
+// showPrimes(105);
 
-// tomorrow call back functions
+function sayHi() {
+  console.log("Hello!");
+}
+
+let func = sayHi; // interesting
+
+// func(); // call functions with a variable
+// sayHi();
+
+// call back functions
+
+function ask(question, yes, no) {
+  if (question) yes();
+  else no();
+}
+
+function showOk() {
+  console.log("You agreed");
+}
+
+function showCancel() {
+  console.log("You cancelled the excecution");
+}
+
+ask(false, showOk, showCancel);
